@@ -17,3 +17,9 @@ Route::get('/', function () {
     /* 6:36 pm */
     return view('welcome');
 });
+Route::get('all_students',function (){
+   return \App\Models\Student::all();
+});
+Route::get('all_cities',function (){
+   return \App\Models\City::all();
+});
